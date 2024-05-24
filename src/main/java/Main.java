@@ -20,8 +20,8 @@ public class Main {
 		aluno_01.apresentacao();
 		aluno_02.apresentacao();
 
-		aluno_01.av1();
-		aluno_02.av1();
+		//aluno_01.av1();
+		//aluno_02.av1();
 
 		//aluno_01.falarSobreCurso();
 

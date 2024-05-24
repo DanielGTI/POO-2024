@@ -1,12 +1,8 @@
-public class Aluno implements AulaPresencial{
+public class Aluno extends Pessoa{
 
 	
 	// ATRIBUTOS ou CARACTERISTICAS
-	private String nome;
-	private int idade;
 	private String RA;
-	private String CPF;
-	private String CEP;
 	private String nomeCurso;
 	private int codigoCurso;
 	private String Turma;
@@ -19,20 +15,11 @@ public class Aluno implements AulaPresencial{
 
 	//	METODO CONSTRUTOR
 	public Aluno(String nomeAluno, int idadeAluno){
-		this.nome = nomeAluno;
-		this.idade = idadeAluno;
+		this.setNome(nomeAluno);
+		this.setIdade(idadeAluno);
 	}
 	
 	// MÉTODOS ACESSORES E MODIFICADORES
-	public int getIdade(){
-		return this.idade;
-	}
-
-	public int setIdade(int n){
-		this.idade = n;
-		return idade;
-	}
-	
 	public int getCodigoCurso(){
 		return this.codigoCurso;
 	}
@@ -42,14 +29,6 @@ public class Aluno implements AulaPresencial{
 		return this.codigoCurso;
 	}
 
-	public String getNome(){
-		return this.nome;
-	}
-
-	public String setNome(String n){
-		this.nome = n;
-		return this.nome;
-	}
 
 	public String getRA(){
 		return this.RA;
@@ -58,24 +37,6 @@ public class Aluno implements AulaPresencial{
 	public String setRA(String n){
 		this.RA = n;
 		return this.RA;
-	}
-
-	public String getCPF(){
-		return this.CPF;
-	}
-
-	public String setCPF(String n){
-		this.CPF = n;
-		return this.CPF;
-	}
-	
-	public String getCEP(){
-		return this.CEP;
-	}
-
-	public String setCEP(String n){
-		this.CEP = n;
-		return this.CEP;
 	}
 
 	public String getNomeCurso(){
@@ -123,26 +84,6 @@ public class Aluno implements AulaPresencial{
 		return this.notaAV1;
 	}
 	
-	//	MÉTODOS ABSTRATOS
-	@Override
-	public void av1(){
-		if (this.notaAV1 != 0){
-			System.out.printf("AV1 do aluno %s = %f\n", this.nome, this.notaAV1);
-		} else{
-			System.out.printf("\n%s ainda não realizou a AV1.\n", this.getNome());
-		}
-		
-		
-	}
-
-	@Override
-	public void av2(){
-		
-	}
-	@Override
-	public void entradaCatraca(){
-		
-	}
 	
 	
 	
