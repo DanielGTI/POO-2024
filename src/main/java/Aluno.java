@@ -1,5 +1,6 @@
 public class Aluno implements AulaPresencial{
 
+	
 	// ATRIBUTOS ou CARACTERISTICAS
 	private String nome;
 	private int idade;

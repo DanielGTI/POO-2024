@@ -4,6 +4,7 @@ public class Main {
 
 		Aluno aluno_01 = new Aluno("Daniel", 20);
 		Aluno aluno_02 = new Aluno("Maria", 22);
+		
 		// Definir os valores aos Atributos	
 		aluno_01.setRA("123456");
 		aluno_01.setCEP("123456789");
